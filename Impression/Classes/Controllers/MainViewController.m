@@ -144,7 +144,7 @@ SINGLETON_IMPL(MainViewController);
 		apptitle.backgroundColor = [UIColor clearColor];
 		apptitle.textColor = [UIColor whiteColor];
 		apptitle.font = [UIFont fontWithName:@"MuseoSansRounded-700" size:12];
-		apptitle.text = @"IMPRESSIONR";
+		apptitle.text = @"";//@"IMPRESSIONR";
 		apptitle.textAlignment = NSTextAlignmentCenter;
 		apptitle.transform = CGAffineTransformMakeScale(0.9, 1);
 		[_fpsLabelContainer addSubview:apptitle];
@@ -153,7 +153,7 @@ SINGLETON_IMPL(MainViewController);
 		appauthor.backgroundColor = [UIColor clearColor];
 		appauthor.textColor = [UIColor whiteColor];
 		appauthor.font = [UIFont fontWithName:@"MuseoSansRounded-300" size:7.25];
-		appauthor.text = @"BY JASON FIELDMAN";
+		appauthor.text = @"";//@"BY JASON FIELDMAN";
 		appauthor.textAlignment = NSTextAlignmentCenter;
 		[_fpsLabelContainer addSubview:appauthor];
 		
@@ -308,7 +308,7 @@ SINGLETON_IMPL(MainViewController);
 			settingLabel.textColor = labelColor;
 			settingLabel.textAlignment = NSTextAlignmentLeft;
 			settingLabel.font = infoFont;
-			settingLabel.text = @"Line Count";
+			settingLabel.text = @"粒子数量";//@"Line Count";
 			[_lineSettingsMenu addSubview:settingLabel];
 		}
 		
@@ -335,7 +335,7 @@ SINGLETON_IMPL(MainViewController);
 			settingLabel.textColor = labelColor;
 			settingLabel.textAlignment = NSTextAlignmentLeft;
 			settingLabel.font = infoFont;
-			settingLabel.text = @"Line Width";
+			settingLabel.text = @"粒子宽度";//@"Line Width";
 			[_lineSettingsMenu addSubview:settingLabel];
 		}
 		
@@ -362,7 +362,7 @@ SINGLETON_IMPL(MainViewController);
 			settingLabel.textColor = labelColor;
 			settingLabel.textAlignment = NSTextAlignmentLeft;
 			settingLabel.font = infoFont;
-			settingLabel.text = @"Line Speed";
+			settingLabel.text = @"粒子速度";//@"Line Speed";
 			[_lineSettingsMenu addSubview:settingLabel];
 		}
 		
@@ -389,7 +389,7 @@ SINGLETON_IMPL(MainViewController);
 			settingLabel.textColor = labelColor;
 			settingLabel.textAlignment = NSTextAlignmentLeft;
 			settingLabel.font = infoFont;
-			settingLabel.text = @"Line Alpha";
+			settingLabel.text = @"粒子透明度";//@"Line Alpha";
 			[_lineSettingsMenu addSubview:settingLabel];
 		}
 		
@@ -420,7 +420,7 @@ SINGLETON_IMPL(MainViewController);
 			settingLabel.textColor = labelColor;
 			settingLabel.textAlignment = NSTextAlignmentLeft;
 			settingLabel.font = infoFont;
-			settingLabel.text = @"Swirl Weight";
+			settingLabel.text = @"旋转力度";//@"Swirl Weight";
 			[_fieldSettingsMenu addSubview:settingLabel];
 		}
 		
@@ -447,7 +447,7 @@ SINGLETON_IMPL(MainViewController);
 			settingLabel.textColor = labelColor;
 			settingLabel.textAlignment = NSTextAlignmentLeft;
 			settingLabel.font = infoFont;
-			settingLabel.text = @"Angle Offset";
+			settingLabel.text = @"角度偏移";//@"Angle Offset";
 			[_fieldSettingsMenu addSubview:settingLabel];
 		}
 		
@@ -474,7 +474,7 @@ SINGLETON_IMPL(MainViewController);
 			settingLabel.textColor = labelColor;
 			settingLabel.textAlignment = NSTextAlignmentLeft;
 			settingLabel.font = infoFont;
-			settingLabel.text = @"Swirl Scale";
+			settingLabel.text = @"粒子缩放比例";//@"Swirl Scale";
 			[_fieldSettingsMenu addSubview:settingLabel];
 		}
 		
@@ -492,7 +492,7 @@ SINGLETON_IMPL(MainViewController);
 		_fieldResetButton.frame = CGRectMake(sliderX, sliderY + (sliderYOffset * menuIndex) - 5, sliderW, sliderH);
 		_fieldResetButton.backgroundColor = [UIColor whiteColor];
 		_fieldResetButton.layer.cornerRadius = sliderH / 2;
-		[_fieldResetButton setTitle:@"Reset Swirl Pattern" forState:UIControlStateNormal];
+		[_fieldResetButton setTitle:@"重置粒子形状	"/*@"Reset Swirl Pattern"*/ forState:UIControlStateNormal];
 		_fieldResetButton.titleLabel.font = infoFont;
 		[_fieldResetButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
 		[_fieldResetButton addTarget:self action:@selector(pressedSwirlReset:) forControlEvents:UIControlEventTouchDown];
@@ -516,7 +516,7 @@ SINGLETON_IMPL(MainViewController);
 			settingLabel.textColor = labelColor;
 			settingLabel.textAlignment = NSTextAlignmentLeft;
 			settingLabel.font = infoFont;
-			settingLabel.text = @"Tint Hue";
+			settingLabel.text = @"色相";//@"Tint Hue";
 			[_colorSettingsMenu addSubview:settingLabel];
 		}
 		
@@ -543,7 +543,7 @@ SINGLETON_IMPL(MainViewController);
 			settingLabel.textColor = labelColor;
 			settingLabel.textAlignment = NSTextAlignmentLeft;
 			settingLabel.font = infoFont;
-			settingLabel.text = @"Tint Strength";
+            settingLabel.text = @"着色强度";//@"Tint Strength";
 			[_colorSettingsMenu addSubview:settingLabel];
 		}
 		
@@ -570,7 +570,7 @@ SINGLETON_IMPL(MainViewController);
 			settingLabel.textColor = labelColor;
 			settingLabel.textAlignment = NSTextAlignmentLeft;
 			settingLabel.font = infoFont;
-			settingLabel.text = @"Saturation";
+			settingLabel.text = @"饱和度";//@"Saturation";
 			[_colorSettingsMenu addSubview:settingLabel];
 		}
 		
@@ -597,7 +597,7 @@ SINGLETON_IMPL(MainViewController);
 			settingLabel.textColor = labelColor;
 			settingLabel.textAlignment = NSTextAlignmentLeft;
 			settingLabel.font = infoFont;
-			settingLabel.text = @"Grain Opacity";
+			settingLabel.text = @"纹理透明度";//@"Grain Opacity";
 			[_colorSettingsMenu addSubview:settingLabel];
 		}
 		
@@ -620,7 +620,7 @@ SINGLETON_IMPL(MainViewController);
 		UILabel *loadTitle = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, menuWidth, 40)];
 		loadTitle.backgroundColor = [UIColor clearColor];
 		loadTitle.textColor = [UIColor whiteColor];
-		loadTitle.text = @"Load From";
+		loadTitle.text = @"载入照片";
 		loadTitle.font = infoFont;
 		loadTitle.textAlignment = NSTextAlignmentCenter;
 		[_loadMenu addSubview:loadTitle];
@@ -631,7 +631,7 @@ SINGLETON_IMPL(MainViewController);
 			_loadFromAlbum.frame = CGRectMake(sliderX, sliderY + (sliderYOffset * menuIndex) - 5, sliderW, sliderH);
 			_loadFromAlbum.backgroundColor = [UIColor whiteColor];
 			_loadFromAlbum.layer.cornerRadius = sliderH / 2;
-			[_loadFromAlbum setTitle:@"Photo Album" forState:UIControlStateNormal];
+			[_loadFromAlbum setTitle:@"相册" forState:UIControlStateNormal];
 			_loadFromAlbum.titleLabel.font = infoFont;
 			[_loadFromAlbum setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
 			[_loadFromAlbum addTarget:self action:@selector(pressedLoadButton:) forControlEvents:UIControlEventTouchDown];
@@ -646,7 +646,7 @@ SINGLETON_IMPL(MainViewController);
 			_loadFromRoll.frame = CGRectMake(sliderX, sliderY + (sliderYOffset * menuIndex) - 5, sliderW, sliderH);
 			_loadFromRoll.backgroundColor = [UIColor whiteColor];
 			_loadFromRoll.layer.cornerRadius = sliderH / 2;
-			[_loadFromRoll setTitle:@"Camera Roll" forState:UIControlStateNormal];
+			[_loadFromRoll setTitle:@"以保存图片" forState:UIControlStateNormal];
 			_loadFromRoll.titleLabel.font = infoFont;
 			[_loadFromRoll setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
 			[_loadFromRoll addTarget:self action:@selector(pressedLoadButton:) forControlEvents:UIControlEventTouchDown];
@@ -660,7 +660,7 @@ SINGLETON_IMPL(MainViewController);
 		_loadFromClip.frame = CGRectMake(sliderX, sliderY + (sliderYOffset * menuIndex) - 5, sliderW, sliderH);
 		_loadFromClip.backgroundColor = [UIColor whiteColor];
 		_loadFromClip.layer.cornerRadius = sliderH / 2;
-		[_loadFromClip setTitle:@"Clipboard" forState:UIControlStateNormal];
+		[_loadFromClip setTitle:@"剪切板" forState:UIControlStateNormal];
 		_loadFromClip.titleLabel.font = infoFont;
 		[_loadFromClip setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
 		[_loadFromClip addTarget:self action:@selector(pressedLoadButton:) forControlEvents:UIControlEventTouchDown];
@@ -675,7 +675,7 @@ SINGLETON_IMPL(MainViewController);
 			_loadFromCamera.frame = CGRectMake(sliderX, sliderY + (sliderYOffset * menuIndex) - 5, sliderW, sliderH);
 			_loadFromCamera.backgroundColor = [UIColor whiteColor];
 			_loadFromCamera.layer.cornerRadius = sliderH / 2;
-			[_loadFromCamera setTitle:@"Take Camera Photo" forState:UIControlStateNormal];
+			[_loadFromCamera setTitle:@"相机拍照" forState:UIControlStateNormal];
 			_loadFromCamera.titleLabel.font = infoFont;
 			[_loadFromCamera setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
 			[_loadFromCamera addTarget:self action:@selector(pressedLoadButton:) forControlEvents:UIControlEventTouchDown];
@@ -684,7 +684,7 @@ SINGLETON_IMPL(MainViewController);
 			
 			menuIndex++;
 		}
-		
+		/*
 		_loadFromInsp = [UIButton buttonWithType:UIButtonTypeCustom];
 		_loadFromInsp.frame = CGRectMake(sliderX, sliderY + (sliderYOffset * menuIndex) - 5, sliderW, sliderH);
 		_loadFromInsp.backgroundColor = [UIColor whiteColor];
@@ -697,7 +697,8 @@ SINGLETON_IMPL(MainViewController);
 		_loadMenuHeight += sliderYOffset;
 		
 		menuIndex++;
-		
+		*/
+        
 		/* -- Save Settings -- */
 		
 		sliderY = 44;
@@ -707,7 +708,7 @@ SINGLETON_IMPL(MainViewController);
 		UILabel *saveTitle = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, menuWidth, 40)];
 		saveTitle.backgroundColor = [UIColor clearColor];
 		saveTitle.textColor = [UIColor whiteColor];
-		saveTitle.text = @"Save/Post To";
+		saveTitle.text = @"保存到";
 		saveTitle.font = infoFont;
 		saveTitle.textAlignment = NSTextAlignmentCenter;
 		[_saveMenu addSubview:saveTitle];
@@ -717,7 +718,7 @@ SINGLETON_IMPL(MainViewController);
 		_saveToAlbum.frame = CGRectMake(sliderX, sliderY + (sliderYOffset * menuIndex) - 5, sliderW, sliderH);
 		_saveToAlbum.backgroundColor = [UIColor whiteColor];
 		_saveToAlbum.layer.cornerRadius = sliderH / 2;
-		[_saveToAlbum setTitle:@"Photo Album" forState:UIControlStateNormal];
+		[_saveToAlbum setTitle:@"相册" forState:UIControlStateNormal];
 		_saveToAlbum.titleLabel.font = infoFont;
 		[_saveToAlbum setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
 		[_saveToAlbum addTarget:self action:@selector(pressedSaveButton:) forControlEvents:UIControlEventTouchDown];
@@ -730,7 +731,7 @@ SINGLETON_IMPL(MainViewController);
 		_saveToClip.frame = CGRectMake(sliderX, sliderY + (sliderYOffset * menuIndex) - 5, sliderW, sliderH);
 		_saveToClip.backgroundColor = [UIColor whiteColor];
 		_saveToClip.layer.cornerRadius = sliderH / 2;
-		[_saveToClip setTitle:@"Clipboard" forState:UIControlStateNormal];
+		[_saveToClip setTitle:@"剪切板" forState:UIControlStateNormal];
 		_saveToClip.titleLabel.font = infoFont;
 		[_saveToClip setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
 		[_saveToClip addTarget:self action:@selector(pressedSaveButton:) forControlEvents:UIControlEventTouchDown];
@@ -738,7 +739,7 @@ SINGLETON_IMPL(MainViewController);
 		_saveMenuHeight += sliderYOffset;
 		
 		menuIndex++;
-		
+		/*
 		_saveToFacebook = [UIButton buttonWithType:UIButtonTypeCustom];
 		_saveToFacebook.frame = CGRectMake(sliderX, sliderY + (sliderYOffset * menuIndex) - 5, sliderW, sliderH);
 		_saveToFacebook.backgroundColor = [UIColor whiteColor];
@@ -767,12 +768,12 @@ SINGLETON_IMPL(MainViewController);
 			
 			menuIndex++;
 		}
-		
+		*/
 		_saveToOther = [UIButton buttonWithType:UIButtonTypeCustom];
 		_saveToOther.frame = CGRectMake(sliderX, sliderY + (sliderYOffset * menuIndex) - 5, sliderW, sliderH);
 		_saveToOther.backgroundColor = [UIColor whiteColor];
 		_saveToOther.layer.cornerRadius = sliderH / 2;
-		[_saveToOther setTitle:@"Other" forState:UIControlStateNormal];
+		[_saveToOther setTitle:@"其他" forState:UIControlStateNormal];
 		_saveToOther.titleLabel.font = infoFont;
 		[_saveToOther setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
 		[_saveToOther addTarget:self action:@selector(pressedSaveButton:) forControlEvents:UIControlEventTouchDown];
@@ -790,7 +791,7 @@ SINGLETON_IMPL(MainViewController);
 		UILabel *savePurchaseTitle = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, menuWidth, 60)];
 		savePurchaseTitle.backgroundColor = [UIColor clearColor];
 		savePurchaseTitle.textColor = [UIColor whiteColor];
-		savePurchaseTitle.text = @"The Save Menu\nmust be unlocked.";
+		savePurchaseTitle.text = @"保存功能\n需要解锁";
 		savePurchaseTitle.font = infoFont;
 		savePurchaseTitle.numberOfLines = 2;
 		savePurchaseTitle.textAlignment = NSTextAlignmentCenter;
@@ -801,7 +802,7 @@ SINGLETON_IMPL(MainViewController);
 		_buyProButton.frame = CGRectMake(sliderX, sliderY + (sliderYOffset * menuIndex) - 5, sliderW, sliderH);
 		_buyProButton.backgroundColor = [UIColor whiteColor];
 		_buyProButton.layer.cornerRadius = sliderH / 2;
-		[_buyProButton setTitle:@"Unlock" forState:UIControlStateNormal];
+		[_buyProButton setTitle:@"功能锁定" forState:UIControlStateNormal];
 		_buyProButton.titleLabel.font = infoFont;
 		[_buyProButton setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
 		[_buyProButton addTarget:self action:@selector(pressedPurchaseButton:) forControlEvents:UIControlEventTouchDown];
@@ -815,7 +816,7 @@ SINGLETON_IMPL(MainViewController);
 		_restorePurchaseButton.frame = CGRectMake(sliderX, sliderY + (sliderYOffset * menuIndex) - 5, sliderW, sliderH);
 		_restorePurchaseButton.backgroundColor = [UIColor whiteColor];
 		_restorePurchaseButton.layer.cornerRadius = sliderH / 2;
-		[_restorePurchaseButton setTitle:@"Restore Purchase" forState:UIControlStateNormal];
+		[_restorePurchaseButton setTitle:@"恢复购买" forState:UIControlStateNormal];
 		_restorePurchaseButton.titleLabel.font = infoFont;
 		[_restorePurchaseButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
 		[_restorePurchaseButton addTarget:self action:@selector(pressedPurchaseButton:) forControlEvents:UIControlEventTouchDown];
@@ -901,7 +902,7 @@ SINGLETON_IMPL(MainViewController);
 }
 
 - (void) setPurchasePrice:(NSString*)price {
-	[_buyProButton setTitle:[NSString stringWithFormat:@"Unlock (%@)", price] forState:UIControlStateNormal];
+	[_buyProButton setTitle:[NSString stringWithFormat:@"解锁(%@)", price] forState:UIControlStateNormal];
 	[_buyProButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
 	_buyProButton.userInteractionEnabled = YES;
 }
@@ -1128,19 +1129,18 @@ SINGLETON_IMPL(MainViewController);
 	
 	if (sender == _saveToClip) {
 		[UIPasteboard generalPasteboard].image = _paintView.renderedImage;
-		[self showModalMessage:@"Image copied!"];
+		[self showModalMessage:@"图片已经拷贝至剪切板！"];
 		//[Flurry logEvent:@"Save_to_Clipboard"];
 	} else if (sender == _saveToAlbum) {
-		UIImageWriteToSavedPhotosAlbum(_paintView.renderedImage, self, @selector(image:didFinishSavingWithError:contextInfo:), nil);
+        UIImageWriteToSavedPhotosAlbum(_paintView.renderedImage, self, @selector(image:didFinishSavingWithError:contextInfo:), nil);
 		//[Flurry logEvent:@"Save_to_Album"];
-	} else if (sender == _saveToFacebook) {
+	}/* else if (sender == _saveToFacebook) {
 		SLComposeViewController *composer = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook];
 		[composer addImage:_paintView.renderedImage];
 		[composer setInitialText:@"Created with the Impression iOS app! http://appstore.com/impressionr"];
 		[self presentViewController:composer animated:YES completion:nil];
 		//[Flurry logEvent:@"Save_to_Facebook"];
 	} else if (sender == _saveToInstagram) {
-		/* Create the file */
 		NSArray *paths = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
 		NSString *imgFilePath = [paths[0] stringByAppendingPathComponent:@"upload.igo"];
 		NSData *imgData = UIImageJPEGRepresentation(_paintView.renderedImage, 0.9);
@@ -1155,11 +1155,13 @@ SINGLETON_IMPL(MainViewController);
 		if (!response) [self showModalMessage:@"Instagram not installed."];
 		
 		//[Flurry logEvent:@"Save_to_Instagram"];
-	} else if (sender == _saveToOther) {
-		/* Create the file */
+	}*/ else if (sender == _saveToOther) {
 		NSArray *paths = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
 		NSString *imgFilePath = [paths[0] stringByAppendingPathComponent:@"upload.jpg"];
-		NSData *imgData = UIImageJPEGRepresentation(_paintView.image, 0.9);
+		//这里好像应该写渲染后的图片
+        //NSData *imgData = UIImageJPEGRepresentation(_paintView.image, 0.9);
+        NSData *imgData = UIImageJPEGRepresentation(_paintView.renderedImage, 0.9);
+        
 		[imgData writeToFile:imgFilePath atomically:YES];
 		
 		static __strong UIDocumentInteractionController *documentInteractionController = nil;
@@ -1167,16 +1169,16 @@ SINGLETON_IMPL(MainViewController);
 		//documentInteractionController.annotation = [NSDictionary dictionaryWithObject:@"Created with the Impression iOS app!" forKey:@"InstagramCaption"];
 		BOOL response = [documentInteractionController presentOpenInMenuFromRect:CGRectZero inView:self.view animated:YES];
 		
-		if (!response) [self showModalMessage:@"No supported apps installed."];
+		if (!response) [self showModalMessage:@"没有安装其他支持的应用。"];
 		//[Flurry logEvent:@"Save_to_Other"];
 	}
 }
 
 - (void) image:(UIImage *)image didFinishSavingWithError:(NSError*)error contextInfo:(void *)contextInfo {
 	if (error) {
-		[self showModalMessage:@"Save failed."];
+		[self showModalMessage:@"图片保存失败！"];
 	} else {
-		[self showModalMessage:@"Image saved!"];
+		[self showModalMessage:@"图片保存成功！"];
 	}
 }
 
@@ -1186,11 +1188,11 @@ SINGLETON_IMPL(MainViewController);
 	[PreloadedSFX playSFX:PLSFX_BUTTON_DOWN];
 	
 	if (sender == _buyProButton) {
-		[self showModalMessage:@"Contacting App Store"];
+		[self showModalMessage:@"正在连接 App Store"];
 		[[StoreManager sharedInstance] initiatePurchase];
 		//[Flurry logEvent:@"Initiated_Purchase"];
 	} else {
-		[self showModalMessage:@"Contacting App Store"];
+		[self showModalMessage:@"正在连接 App Store"];
 		[[StoreManager sharedInstance] restorePurchase];
 		//[Flurry logEvent:@"Initiated_Restore"];
 	}

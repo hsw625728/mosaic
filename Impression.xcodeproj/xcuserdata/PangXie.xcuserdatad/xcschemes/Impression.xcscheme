@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "35D6FE7518F5927D0054C376"
-               BuildableName = "Impression.app"
+               BuildableName = "&#x827a;&#x672f;&#x9a6c;&#x8d5b;&#x514b;.app"
                BlueprintName = "Impression"
                ReferencedContainer = "container:Impression.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "35D6FE7518F5927D0054C376"
-            BuildableName = "Impression.app"
+            BuildableName = "&#x827a;&#x672f;&#x9a6c;&#x8d5b;&#x514b;.app"
             BlueprintName = "Impression"
             ReferencedContainer = "container:Impression.xcodeproj">
          </BuildableReference>
@@ -66,7 +66,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "35D6FE7518F5927D0054C376"
-            BuildableName = "Impression.app"
+            BuildableName = "&#x827a;&#x672f;&#x9a6c;&#x8d5b;&#x514b;.app"
             BlueprintName = "Impression"
             ReferencedContainer = "container:Impression.xcodeproj">
          </BuildableReference>
@@ -85,7 +85,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "35D6FE7518F5927D0054C376"
-            BuildableName = "Impression.app"
+            BuildableName = "&#x827a;&#x672f;&#x9a6c;&#x8d5b;&#x514b;.app"
             BlueprintName = "Impression"
             ReferencedContainer = "container:Impression.xcodeproj">
          </BuildableReference>
@@ -96,6 +96,7 @@
    </AnalyzeAction>
    <ArchiveAction
       buildConfiguration = "Release"
+      customArchiveName = "&#x827a;&#x672f;&#x9a6c;&#x8d5b;&#x514b;&#10;Portrait&#10;Landscape&#10;iPhone and iPod touch&#10;320 x 480 pixels&#10;640 x 960 pixels (@2x)&#10;Not supported&#10;iPhone 5 and iPod touch (5th generation)&#10;640 x 1136 pixels (@2x)&#10;Not supported&#10;iPad&#10;768 x 1024 pixels&#10;1536 x 2048 pixels (@2x)&#10;1024 x 768 pixels&#10;2048 x 1536 pixels (@2x)&#10;&#x827a;&#x672f;&#x9a6c;&#x8d5b;&#x514b;"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>

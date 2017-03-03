@@ -113,14 +113,14 @@ SINGLETON_IMPL(StoreManager);
 			transaction.transactionState == SKPaymentTransactionStateRestored) {
 			
 			EXLog(PURCHASE, ERR, @"> Transaction complete");
-			[[MainViewController sharedInstance] showModalMessage:@"Save Menu Unlocked!"];
+			[[MainViewController sharedInstance] showModalMessage:@"保存按钮已解锁！"];
 			self.saveMenuPurchased = YES;
 			//[Flurry logEvent:@"Purchase_Successful"];
 				
 		} else if (transaction.transactionState == SKPaymentTransactionStateFailed) {
 				
 			EXLog(PURCHASE, ERR, @"> Transaction error: %@", transaction.error);
-			[[MainViewController sharedInstance] showModalMessage:@"Purchase failed :("];
+			[[MainViewController sharedInstance] showModalMessage:@"解锁功能恢复失败:("];
 			
 		}
 			
@@ -136,13 +136,13 @@ SINGLETON_IMPL(StoreManager);
 - (void)paymentQueue:(SKPaymentQueue *)queue restoreCompletedTransactionsFailedWithError:(NSError *)error {
 	EXLog(PURCHASE, ERR, @"paymentQueue:restoreCompletedTransactionsFailedWithError: %@", error);
 	
-	[[MainViewController sharedInstance] showModalMessage:@"Restore failed :("];
+	[[MainViewController sharedInstance] showModalMessage:@"恢复失败 :("];
 }
 
 - (void)paymentQueueRestoreCompletedTransactionsFinished:(SKPaymentQueue *)queue {
 	EXLog(PURCHASE, DBG, @"paymentQueueRestoreCompletedTransactionsFinished:");
 
-	[[MainViewController sharedInstance] showModalMessage:@"Purchase Restored!"];
+	[[MainViewController sharedInstance] showModalMessage:@"解锁功能已成功恢复:)"];
 	self.saveMenuPurchased = YES;
 	//[Flurry logEvent:@"Restore_Successful"];
 }
